@@ -6,9 +6,9 @@ Release:	1
 License:	GPL
 Group:		X11/Applications/Games
 Source0:	http://savannah.nongnu.org/download/spacehulk/%{name}-%{version}.tar.gz
-Patch0:         %{name}-compile_error.patch
 Source1:	%{name}.desktop
 Source2:	%{name}.png
+Patch0:         %{name}-compile_error.patch
 Icon:		spacehulk.xpm
 URL:		http://savannah.nongnu.org/projects/spacehulk/
 BuildRequires:	qt-devel >= 3.0.5
@@ -32,7 +32,6 @@ asynchronicznie poprzez e-mail.
 
 %prep
 %setup -q
-
 %patch0 -p1
 
 %build
