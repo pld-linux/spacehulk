@@ -1,14 +1,13 @@
 Summary:	Board game which takes place in the world of Warhammer 40000
 Summary(pl):	Gra planszowa tocz±ca siê w ¶wiecie Warhammer'a 40000
 Name:		spacehulk
-Version:	1.2
+Version:	1.2.1
 Release:	1
 License:	GPL
 Group:		X11/Applications/Games
 Source0:	http://savannah.nongnu.org/download/spacehulk/%{name}-%{version}.tar.gz
 Source1:	%{name}.desktop
 Source2:	%{name}.png
-Patch0:         %{name}-compile_error.patch
 Icon:		spacehulk.xpm
 URL:		http://savannah.nongnu.org/projects/spacehulk/
 BuildRequires:	qt-devel >= 3.0.5
@@ -32,7 +31,6 @@ asynchronicznie poprzez e-mail.
 
 %prep
 %setup -q
-%patch0 -p1
 
 %build
 %configure2_13
