@@ -10,8 +10,7 @@ Source1:	%{name}.desktop
 Source2:	%{name}.png
 Icon:		spacehulk.xpm
 URL:		http://savannah.nongnu.org/projects/spacehulk/
-BuildRequires:	qt >= 3.1.0
-Requires:	qt
+BuildRequires:	qt-devel >= 3.0.5
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
