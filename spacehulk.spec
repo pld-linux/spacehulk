@@ -38,12 +38,13 @@ asynchronicznie poprzez e-mail.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_datadir}/spacehulk,%{_bindir},%{_applnkdir}/Games/Board,%{_pixmapsdir}}
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
+install -d $RPM_BUILD_ROOT{%{_applnkdir}/Games/Board,%{_pixmapsdir}}
+
 install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Games/Board
-install %{SOURCE2} $RPM_BUILD_ROOT%{_pixmapsdir}/
+install %{SOURCE2} $RPM_BUILD_ROOT%{_pixmapsdir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -51,12 +52,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc AUTHORS COPYING NEWS README TODO
-# !!! FIXME !!!    directories only ?
-%attr(755,root,root) %dir %{_bindir}/*
-%dir %{_datadir}/spacehulk/levels/*
-%dir %{_datadir}/spacehulk/*
-%dir %{_datadir}/spacehulk/sounds/*
-%dir %{_datadir}/spacehulk/themes/BrownSimple/*
-%dir %{_datadir}/spacehulk/themes/Deathwing/*
+%attr(755,root,root) %{_bindir}/*
+%{_datadir}/spacehulk
 %{_applnkdir}/Games/Board/spacehulk.desktop
 %{_pixmapsdir}/spacehulk.png
