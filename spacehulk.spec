@@ -3,7 +3,7 @@ Summary(pl):	Gra planszowa tocz±ca siê w ¶wiecie Warhammer'a 40000
 Name:		spacehulk
 Version:	1.3.1
 Release:	1
-License:	GPL
+License:	GPL v2+
 Group:		X11/Applications/Games
 Source0:	http://savannah.nongnu.org/download/spacehulk/main.pkg/%{version}/%{name}-%{version}.tar.gz
 Source1:	%{name}.desktop
@@ -51,7 +51,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc AUTHORS COPYING NEWS README TODO
+%doc AUTHORS NEWS README TODO
 %attr(755,root,root) %{_bindir}/*
 %{_datadir}/spacehulk
 %{_applnkdir}/Games/Board/spacehulk.desktop
