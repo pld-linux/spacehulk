@@ -14,6 +14,8 @@ URL:		http://savannah.nongnu.org/projects/spacehulk/
 BuildRequires:	qt-devel >= 3.0.5
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
+%define		_prefix		/usr/X11R6
+
 %description
 Space Hulk is a great board game which takes place in the world of
 Warhammer 40000. It is a two player turn-based game where one player
