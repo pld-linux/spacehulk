@@ -1,0 +1,3 @@
+- it is for qt 3.1 (Ac), so moved to /usr
+- use macros
+- fixed translation, adapterized
