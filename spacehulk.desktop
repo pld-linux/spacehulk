@@ -2,7 +2,9 @@
 Name=Spacehulk
 Comment=The Spacehulk board game
 Comment[pl]=Spacehulk - gra planszowa
-Icon=spacehulk.xpm
+Icon=spacehulk.png
 Exec=qspacehulk
 Terminal=0
 Type=Application
+Categories=Qt;Application;Game;BoardGame;
+# vi: encoding=utf-8
