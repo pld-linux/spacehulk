@@ -1,12 +1,12 @@
 Summary:	Board game which takes place in the world of Warhammer 40000
 Summary(pl):	Gra planszowa tocz±ca siê w ¶wiecie Warhammer'a 40000
 Name:		spacehulk
-Version:	1.3.1
+Version:	1.4.3
 Release:	1
 License:	GPL v2+
 Group:		X11/Applications/Games
 Source0:	http://savannah.nongnu.org/download/spacehulk/main.pkg/%{version}/%{name}-%{version}.tar.gz
-# Source0-md5:	ed15a7c1eb6879b3aa15c823ec2b3317
+# Source0-md5:	7bdc457d76be495df9ae28038acaaeca
 Source1:	%{name}.desktop
 Source2:	%{name}.png
 Icon:		spacehulk.xpm
@@ -25,9 +25,9 @@ either in real time or asynchronously via email.
 %description -l pl
 Space Hulk jest gr± planszow±, której akcja toczy siê w ¶wiecie
 Warhammera 40000. Jest to turowa gra dla dwóch osób. Jeden gracz
-odgrywa 'Marine', a drugi wciela sie w obcego zwanego 'Genokrad'. Jest
+odgrywa 'Marine', a drugi wciela siê w obcego zwanego 'Genokrad'. Jest
 to kompletna konwersja gry planszowej z zasadami 2-giej edycji.
-Rozgrywka moze toczyæ siê przez sieæ, w czasie rzeczywistym, lub
+Rozgrywka mo¿e toczyæ siê przez sieæ, w czasie rzeczywistym, lub
 asynchronicznie poprzez e-mail.
 
 %prep
@@ -40,11 +40,12 @@ asynchronicznie poprzez e-mail.
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
-install -d $RPM_BUILD_ROOT{%{_applnkdir}/Games/Board,%{_pixmapsdir}}
+install -d $RPM_BUILD_ROOT{%{_desktopdir},%{_pixmapsdir}}
 
-install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Games/Board
+install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}
 install %{SOURCE2} $RPM_BUILD_ROOT%{_pixmapsdir}
 
 %clean
@@ -55,5 +56,5 @@ rm -rf $RPM_BUILD_ROOT
 %doc AUTHORS NEWS README TODO
 %attr(755,root,root) %{_bindir}/*
 %{_datadir}/spacehulk
-%{_applnkdir}/Games/Board/spacehulk.desktop
+%{_desktopdir}/%{name}.desktop
 %{_pixmapsdir}/spacehulk.png
