@@ -5,7 +5,7 @@ Version:	1.2.1
 Release:	1
 License:	GPL
 Group:		X11/Applications/Games
-Source0:	http://savannah.nongnu.org/download/spacehulk/%{name}-%{version}.tar.gz
+Source0:	http://savannah.nongnu.org/download/spacehulk/main.pkg/%{version}/%{name}-%{version}.tar.gz
 Source1:	%{name}.desktop
 Source2:	%{name}.png
 Icon:		spacehulk.xpm
