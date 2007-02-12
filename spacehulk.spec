@@ -1,5 +1,5 @@
 Summary:	Board game which takes place in the world of Warhammer 40000
-Summary(pl):	Gra planszowa tocz±ca siê w ¶wiecie Warhammer'a 40000
+Summary(pl.UTF-8):   Gra planszowa toczÄ…ca siÄ™ w Å›wiecie Warhammer'a 40000
 Name:		spacehulk
 Version:	1.4.3
 Release:	1
@@ -21,12 +21,12 @@ plays the 'Marine', the other player plays the alien called
 game with the 2nd edition rules. It features playing over the network,
 either in real time or asynchronously via email.
 
-%description -l pl
-Space Hulk jest gr± planszow±, której akcja toczy siê w ¶wiecie
-Warhammera 40000. Jest to turowa gra dla dwóch osób. Jeden gracz
-odgrywa 'Marine', a drugi wciela siê w obcego zwanego 'Genokrad'. Jest
+%description -l pl.UTF-8
+Space Hulk jest grÄ… planszowÄ…, ktÃ³rej akcja toczy siÄ™ w Å›wiecie
+Warhammera 40000. Jest to turowa gra dla dwÃ³ch osÃ³b. Jeden gracz
+odgrywa 'Marine', a drugi wciela siÄ™ w obcego zwanego 'Genokrad'. Jest
 to kompletna konwersja gry planszowej z zasadami 2-giej edycji.
-Rozgrywka mo¿e toczyæ siê przez sieæ, w czasie rzeczywistym, lub
+Rozgrywka moÅ¼e toczyÄ‡ siÄ™ przez sieÄ‡, w czasie rzeczywistym, lub
 asynchronicznie poprzez e-mail.
 
 %prep
