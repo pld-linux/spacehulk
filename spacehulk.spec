@@ -1,5 +1,5 @@
 Summary:	Board game which takes place in the world of Warhammer 40000
-Summary(pl.UTF-8):   Gra planszowa tocząca się w świecie Warhammer'a 40000
+Summary(pl.UTF-8):	Gra planszowa tocząca się w świecie Warhammer'a 40000
 Name:		spacehulk
 Version:	1.4.3
 Release:	1
