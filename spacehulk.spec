@@ -10,7 +10,7 @@ Source0:	http://savannah.nongnu.org/download/spacehulk/main.pkg/%{version}/%{nam
 Source1:	%{name}.desktop
 Source2:	%{name}.png
 URL:		http://savannah.nongnu.org/projects/spacehulk/
-BuildRequires:	qt-devel >= 3.0.5
+BuildRequires:	qt-devel >= 3:3.0.5
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
