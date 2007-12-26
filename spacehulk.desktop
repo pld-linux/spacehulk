@@ -6,5 +6,5 @@ Icon=spacehulk
 Exec=qspacehulk
 Terminal=false
 Type=Application
-Categories=Qt;Application;Game;BoardGame;
+Categories=Qt;Game;BoardGame;
 # vi: encoding=utf-8
